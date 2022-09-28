@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./head.ejs', { title }) %>
+  <body>
+    <img src="<%= user.avatarUrl(256) %>" alt="<%= user.username %>" />
+    <h1>Vérification réussie</h1>
+    <p>Vous êtes connecté en tant que : <strong><%= user.tag %></strong> et votre id est <code><%= user.id %></code></p>
+    <p>Date de création du compte : <strong><%= user.createdAt.toUTCString() %></strong></p>
+    <a href="/logout">Cliquez ici pour retourner sur le serveur</a>
+  </body>
+</html>

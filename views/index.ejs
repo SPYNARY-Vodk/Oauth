@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8"/>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8"/>
-<style type="text/css">
-</head>
   <%- include('./head.ejs', { title }) %>
   <body>
-    <div class="aa">
-
-    <h1>Authentification Requise !</h1>
-    <phref="<%= link %>">Verification</p>
-    
-    </div>
+    <h1>Cliquez ci dessous pour vous authentifier</h1>
+    <a href="<%= link %>">Vérification</a>
   </body>
 </html>

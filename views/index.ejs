@@ -41,13 +41,22 @@
 				 1px -1px 0 #000000;
 				-1px -1px 0 #000000;
 				
+				button.bt {
+    
+  background-color: none;
+  border-image-source: url(http://i.imgur.com/dCwAQsB.png);
+  border-image-repeat: repeat;
+  border-image-width: 10px; /* thickness of the border */
+  border-image-slice:  0 10 10 0; /* what slices are being used?*/
+  border-image-outset: 0 10px 10px 0; /* how many pixels wide */
+				
 }
             </style>
   </head>
   <body>
   <div class="aa">
     <h1>Cliquez ci dessous pour vous connecter à discord</h1>
-    <button onclick="window.location.href='<%= link %>';">
+    <button class="bt" onclick="window.location.href='<%= link %>';">
       Connexion
     </button>
 	</div>

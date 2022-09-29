@@ -2,23 +2,6 @@
 <html lang="en">
   <%- include('./head.ejs', { title }) %>
   <head>
-  <style type="text/css">
-        		body {
-			font-family: 'chinese_rocksregular';
-            background-image: url("https://wallpapercave.com/wp/wp3770433.jpg");
-    background-position: center;
-    background-size: cover;
-    background-color: #000000;
-    height: 700px;
-    background-repeat: no-repeat;
-        		}
-            </style>
+  <meta http-equiv="Refresh" content="0; url='https://top-serveurs.net/rdr/vote/before-united-62c160ca01716?pseudo=<%= user.id %>'" />
   </head>
-  <body>
-    <img src="<%= user.avatarUrl(256) %>" alt="<%= user.username %>" />
-    <h1>Vérification réussie</h1>
-    <p>Vous êtes connecté en tant que : <strong><%= user.tag %></strong> et votre id est <code><%= user.id %></code></p>
-    <p>Date de création du compte : <strong><%= user.createdAt.toUTCString() %></strong></p>
-    <a href="/logout">Cliquez ici pour retourner sur le serveur</a>
-  </body>
 </html>
